@@ -12,16 +12,16 @@ Contemporary service robots applications ranging from automated inventory moveme
 The project pursues an autonomous indoor mobile robot whose performance is bounded by the following specific objectives:
 
 \begin{enumerate}
-  \item \textbf{Holonomic mobility}. 
+  \item \textbf{Holonomic mobility}.
         Implement a mecanum wheel drivetrain that allows motion in any direction at linear speeds up to \SI[per-mode=fraction,fraction-function=\tfrac]{1}{\metre\per\second}.
 
-  \item \textbf{Localization and mapping accuracy}. 
+  \item \textbf{Localization and mapping accuracy}.
         Configure a \gls{slam} system under \gls{ros}~2 so that global localization under \SI{10}{\centi\metre}, and 2D occupancy maps reach \SI{5}{\centi\metre} resolution with at most \SI{5}{\percent} difference between ground truth and measured dimensions.
 
-  \item \textbf{Energy autonomy}. 
+  \item \textbf{Energy autonomy}.
         Provide a power subsystem capable of sustaining at least \SI{2}{\hour} of continuous operation.
 
-  \item \textbf{Low cost and modularity}. 
+  \item \textbf{Low cost and modularity}.
         Limit total material expenditure to 1500\euro~including all hardware and software, while ensuring that the design is modular enough to allow future upgrades such as additional sensors and actuators.
 \end{enumerate}
 
@@ -429,30 +429,30 @@ Figure~\ref{fig:block-diagram} presents a high-level view of the robot's archite
 
 \section{Microcontroller selection}
 
-The \gls{mcu} requires at least sixteen \glspl{gpio}, eight to sample \gls{hall} sensors and eight to drive \gls{hbridge} inputs together with four hardware timers that generate \gls{pwm} signals, an on-chip \gls{can} peripheral and sufficient arithmetic throughput to close four independent \glspl{pid} loops. 
+The \gls{mcu} requires at least sixteen \glspl{gpio}, eight to sample \gls{hall} sensors and eight to drive \gls{hbridge} inputs together with four hardware timers that generate \gls{pwm} signals, an on-chip \gls{can} peripheral and sufficient arithmetic throughput to close four independent \glspl{pid} loops.
 Table~\ref{tab:mcu_comparison} compares five microcontroller that satisfy these baseline constraints.
 
 \begin{table}[H]
   \centering
   \begin{tabular}{l c c c c c}
     \toprule
-    \textbf{MCU} &
-    \textbf{Core \& clock} &
-    \textbf{GPIO} &
-    \textbf{PWM timers} &
-    \textbf{CAN} &
-    \textbf{FPU} \\
+    \textbf{MCU}            &
+    \textbf{Core \& clock}  &
+    \textbf{GPIO}           &
+    \textbf{PWM timers}     &
+    \textbf{CAN}            &
+    \textbf{FPU}                                                       \\
     \midrule
-    \textbf{ESP32-WROOM-32} & Xtensa @ 40 MHz & 34 & 16 & Yes & Yes\\
-    \textbf{STM32F303RE} & Cortex-M4 @ 72 MHz & 26 & 14 & Yes & Yes\\
-    \textbf{Arduino uno} & Cortex-M4 @ 48 MHz & 20 & 6 & Yes & No\\
+    \textbf{ESP32-WROOM-32} & Xtensa @ 40 MHz    & 34 & 16 & Yes & Yes \\
+    \textbf{STM32F303RE}    & Cortex-M4 @ 72 MHz & 26 & 14 & Yes & Yes \\
+    \textbf{Arduino uno}    & Cortex-M4 @ 48 MHz & 20 & 6  & Yes & No  \\
     \bottomrule
   \end{tabular}
   \caption{Comparison of candidate MCUs}
   \label{tab:mcu_comparison}
 \end{table}
 
-\paragraph*{Justification of the choice}  
+\paragraph*{Justification of the choice}
 The \textbf{STM32F303RE} has been selected as the \gls{mcu} because it combines the following advantages:
 
 \begin{itemize}
@@ -504,7 +504,7 @@ The platforms evaluated were:
   \item \emph{Limitations:} Power consumption is relatively high.
 \end{itemize}
 
-\paragraph*{Justification of the choice}  
+\paragraph*{Justification of the choice}
 The \textbf{Jetson Orin Nano} is selected as the on-board computer because it best satisfies the project constraints:
 
 \begin{itemize}
@@ -538,31 +538,31 @@ A single \texttt{6S LiPo} pack (\SI{22.2}{\volt} nominal) was chosen for its hig
 
 \section{Camera}
 
-Four commercially available \gls{rgbd} cameras are compared before selecting the \textbf{OAK-D Lite} as the primary sensor for the robot. 
+Four commercially available \gls{rgbd} cameras are compared before selecting the \textbf{OAK-D Lite} as the primary sensor for the robot.
 Table~\ref{tab:rgbd_comparison} summarizes the key specifications that drive the decision.
 
 \begin{table}[H]
   \centering
   \begin{tabular}{l c c c c c c}
     \toprule
-    \textbf{Sensor} &
-    \textbf{Depth technology} &
+    \textbf{Sensor}              &
+    \textbf{Depth technology}    &
     \textbf{Range (\si{\metre})} &
-    \textbf{Host load} &
-    \textbf{Power (\si{\watt})} &
-    \textbf{Price (\euro)}\\
+    \textbf{Host load}           &
+    \textbf{Power (\si{\watt})}  &
+    \textbf{Price (\euro)}                                                     \\
     \midrule
-    \textbf{OAK-D Lite} & Stereo & 0.4-8 & Very low & 5 & 149\\
-    \textbf{RealSense D435i} & IR+stereo & 0.2-10 & Moderate & 3.5 & 334\\
-    \textbf{Azure Kinect DK} & IR & 0.5-5.46 & Moderate & 3.9 & 399\\
-    \textbf{ZED 2} & Stereo & 0.2-20 & High & 1.9 & 499\\
+    \textbf{OAK-D Lite}          & Stereo    & 0.4-8    & Very low & 5   & 149 \\
+    \textbf{RealSense D435i}     & IR+stereo & 0.2-10   & Moderate & 3.5 & 334 \\
+    \textbf{Azure Kinect DK}     & IR        & 0.5-5.46 & Moderate & 3.9 & 399 \\
+    \textbf{ZED 2}               & Stereo    & 0.2-20   & High     & 1.9 & 499 \\
     \bottomrule
   \end{tabular}
   \caption{Technical and economic comparison of candidate RGB-D sensors}
   \label{tab:rgbd_comparison}
 \end{table}
 
-\paragraph*{Justification of the choice}  
+\paragraph*{Justification of the choice}
 The \textbf{OAK-D Lite} delivers the best balance of performance, integration effort and cost for an embedded, battery-powered platform:
 
 \begin{itemize}
@@ -574,30 +574,30 @@ The \textbf{OAK-D Lite} delivers the best balance of performance, integration ef
 Given these factors, the \textbf{OAK-D Lite} is selected as the RGB-D sensor for the autonomous indoor robot.
 \section{LiDAR}\label{subsec:lidar_selection}
 
-For 2D obstacle detection, a low cost \gls{lidar} is sufficient. 
+For 2D obstacle detection, a low cost \gls{lidar} is sufficient.
 Table~\ref{tab:lidar_comparison} lists three models that meet the basic requirements of \SI{360}{\degree} coverage and at least \SI{10}{\metre} range.
 
 \begin{table}[H]
   \centering
   \begin{tabular}{l c c c}
     \toprule
-    \textbf{Model} &
-    \textbf{Range (\si{\metre})} &
+    \textbf{Model}                     &
+    \textbf{Range (\si{\metre})}       &
     \textbf{Sample rate (\si{\hertz})} &
-    \textbf{ROS driver} \\
+    \textbf{ROS driver}                                  \\
     \midrule
-    \textbf{LD19} & 12 & 4500 & Yes\\
-    \textbf{RPLidar A1} & 12 & 8000 & Yes\\
-    \textbf{YDLidar X4} & 10 & 5000 & Yes\\
+    \textbf{LD19}                      & 12 & 4500 & Yes \\
+    \textbf{RPLidar A1}                & 12 & 8000 & Yes \\
+    \textbf{YDLidar X4}                & 10 & 5000 & Yes \\
     \bottomrule
   \end{tabular}
   \caption{Key specifications of 2D LiDARs}
   \label{tab:lidar_comparison}
 \end{table}
 
-\paragraph*{Justification of the choice}  
-The \textbf{LD19} is chosen because it combines the longest range in the shortlist (up to \SI{12}{\metre}) with a good sample rate (\SI{4.5}{\kilo\hertz}) with lower price than the other two. 
-Its popularity among hobbyists ensures abundant online examples and a maintained \gls{ros}~2 driver, which shortens integration time. 
+\paragraph*{Justification of the choice}
+The \textbf{LD19} is chosen because it combines the longest range in the shortlist (up to \SI{12}{\metre}) with a good sample rate (\SI{4.5}{\kilo\hertz}) with lower price than the other two.
+Its popularity among hobbyists ensures abundant online examples and a maintained \gls{ros}~2 driver, which shortens integration time.
 
 \section{Motors}
 
@@ -712,21 +712,21 @@ All corners are joined using factory-standard \(90\degree\) aluminum corner brac
 \begin{table}[H]
   \centering
   \begin{tabularx}{\textwidth}{
-    >{\raggedright\arraybackslash}X   % wraps Component
-    l                                 % Material
-    S[table-format=1.0]               % Qty
-    S[table-format=1.3]               % Mass each
-    S[table-format=1.3]               % Mass total
+      >{\raggedright\arraybackslash}X   % wraps Component
+      l                                 % Material
+      S[table-format=1.0]               % Qty
+      S[table-format=1.3]               % Mass each
+      S[table-format=1.3]               % Mass total
     }
     \toprule
-    \textbf{Component}                                                                                       & \textbf{Material} & \textbf{Qty} & \textbf{Mass (each) (\si{\kilogram})} & \textbf{Mass (total) (\si{\kilogram})} \\
+    \textbf{Component}                                                         & \textbf{Material} & \textbf{Qty} & \textbf{Mass (each) (\si{\kilogram})} & \textbf{Mass (total) (\si{\kilogram})} \\
     \midrule
-    Vertical V-slot extrusion (\SI{20}{\centi\metre})                                                        & Al 6063-T5        & 4            & \SI{0.090}{}                          & \SI{0.360}{}                           \\
-    Horizontal V-slot extrusion (\SI{40}{\centi\metre})                                                      & Al 6063-T5        & 8            & \SI{0.180}{}                          & \SI{1.440}{}                           \\
-    90\degree{} corner brackets (\SI{2}{\centi\metre\cubed})                                                 & Al 6063-T5        & 8            & \SI{0.011}{}                          & \SI{0.088}{}                           \\
+    Vertical V-slot extrusion (\SI{20}{\centi\metre})                          & Al 6063-T5        & 4            & \SI{0.090}{}                          & \SI{0.360}{}                           \\
+    Horizontal V-slot extrusion (\SI{40}{\centi\metre})                        & Al 6063-T5        & 8            & \SI{0.180}{}                          & \SI{1.440}{}                           \\
+    90\degree{} corner brackets (\SI{2}{\centi\metre\cubed})                   & Al 6063-T5        & 8            & \SI{0.011}{}                          & \SI{0.088}{}                           \\
     Birch plywood shelf (\SI{43}{\centi\metre} $\times$ \SI{43}{\centi\metre}) & Birch plywood     & 2            & \SI{0.295}{}                          & \SI{0.590}{}                           \\
     \midrule
-    \textbf{Total chassis mass}                                                                              &                   &              &                                       & \textbf{\SI{2.478}{}}                  \\
+    \textbf{Total chassis mass}                                                &                   &              &                                       & \textbf{\SI{2.478}{}}                  \\
     \bottomrule
   \end{tabularx}
   \caption{Mass breakdown of chassis components}
@@ -1322,9 +1322,9 @@ The \gls{lidar} node is responsible for interfacing the \textbf{ld19} \gls{lidar
     \textbf{Topic}                   & \textbf{Type}                             & \textbf{Description} \\
     \midrule
     \texttt{/lidar/laser\_scan}      & Publication
-                                     & 2D laser scan: ranges + intensities.                           \\
+                                     & 2D laser scan: ranges + intensities.                             \\
     \texttt{/lidar/point\_cloud\_2d} & Publication
-                                     & 2D point cloud: Cartesian XY + intensity.                      \\
+                                     & 2D point cloud: Cartesian XY + intensity.                        \\
     \bottomrule
   \end{tabular}
   \caption{ROS 2 topics used by the Lidar node}
@@ -1344,9 +1344,9 @@ The \gls{can} node interfaces the vehicle's wheel control and feedback mechanism
     \textbf{Topic}                  & \textbf{Type}                                                      & \textbf{Description} \\
     \midrule
     \texttt{/wheels\_desired\_rate} & Subscription
-                                    & Desired wheel speeds (\texttt{Int16MultiArray}, 4 elements).                            \\
+                                    & Desired wheel speeds (\texttt{Int16MultiArray}, 4 elements).                              \\
     \texttt{/wheel\_ticks}          & Publication
-                                    & Actual wheel encoder ticks (\texttt{Int16MultiArray}, 4 elements).                      \\
+                                    & Actual wheel encoder ticks (\texttt{Int16MultiArray}, 4 elements).                        \\
     \bottomrule
   \end{tabular}
   \caption{ROS\,2 topics used by the CAN node}
@@ -1413,12 +1413,12 @@ The node updates its pose:
   \centering
   \begin{tabular}{lll}
     \toprule
-    \textbf{Topic}         & \textbf{Type}                                                 & \textbf{Description} \\
+    \textbf{Topic}         & \textbf{Type}                                                & \textbf{Description} \\
     \midrule
     \texttt{/wheel\_ticks} & Subscription
                            & Encoder ticks (\texttt{Int16MultiArray} coming from CAN bus)                        \\
     \texttt{/odom}         & Publication
-                           & Computed odometry                                                                    \\
+                           & Computed odometry                                                                   \\
     \bottomrule
   \end{tabular}
   \caption{ROS\,2 topics used by the Odometry node}
@@ -1510,11 +1510,11 @@ In addition to the nodes mentioned previously, \texttt{rtabmap\_ros} node for th
     \midrule
     \texttt{/scan}                  & Subscription  & 2D laser                        \\
     \texttt{oak/rgb/raw}            & Subscription  & Raw RGB image stream            \\
-    \texttt{oak/stereo/image\_rect} & Subscription  & Depth image aligned to RGB.    \\
+    \texttt{oak/stereo/image\_rect} & Subscription  & Depth image aligned to RGB.     \\
     \texttt{oak/rgb/camera\_info}   & Subscription  & Intrinsics for the color camera \\
     \texttt{/odom}                  & Subscription  & Computed odometry               \\
     \texttt{/map}                   & Publication   & Generated 2d map                \\
-    \texttt{/rtabmap/graphcloud}   & Publication   & Generated visual map            \\
+    \texttt{/rtabmap/graphcloud}    & Publication   & Generated visual map            \\
     \bottomrule
   \end{tabular}
   \caption{ROS\,2 topics used by \texttt{rtabmap\_ros} node}
@@ -1528,12 +1528,12 @@ The \texttt{Nav2} node implements the \gls{ros}~2 navigation pipeline, providing
   \centering
   \begin{tabular}{lll}
     \toprule
-    \textbf{Name}                   & \textbf{Type} & \textbf{Description}                               \\
+    \textbf{Name}      & \textbf{Type} & \textbf{Description}                              \\
     \midrule
-    \texttt{/map}                   & Subscription  & Map from the map server                            \\
-    \texttt{/odom}                  & Subscription  & Odometry source for costmap and the local planner \\
-    \texttt{/cmd\_vel}              & Publication   & Desired body velocities                            \\
-    \texttt{/costmap} & Publication   & Costmaps for planner safety checks                 \\
+    \texttt{/map}      & Subscription  & Map from the map server                           \\
+    \texttt{/odom}     & Subscription  & Odometry source for costmap and the local planner \\
+    \texttt{/cmd\_vel} & Publication   & Desired body velocities                           \\
+    \texttt{/costmap}  & Publication   & Costmaps for planner safety checks                \\
     \bottomrule
   \end{tabular}
   \caption{ROS\,2 topics used by the \texttt{Nav2} node}
@@ -1606,7 +1606,7 @@ All trials were carried out in two controlled indoor environments:
 \paragraph*{Ground truth acquisition}
 \label{sec:gt_acquisition}
 
-In the absence of an optical motion capture instruments, ground truth was approximated by manually observing the robot's trajectory and the map it generated. The robot was driven autonomously in both arenas by automating the sending of navigation commands to near points in the costmap, while the \gls{rtab} node was recording the robot's trajectory and the map it generated. The robot's position was recorded at each point in the map. 
+In the absence of an optical motion capture instruments, ground truth was approximated by manually observing the robot's trajectory and the map it generated. The robot was driven autonomously in both arenas by automating the sending of navigation commands to near points in the costmap, while the \gls{rtab} node was recording the robot's trajectory and the map it generated. The robot's position was recorded at each point in the map.
 
 \section{Results}
 \label{sec:results}
@@ -1705,31 +1705,31 @@ with \(\eta_\mathrm{bat}\approx0.9\) accounting for Peukert losses and DC-DC con
     \textbf{Subsystem}
      & \textbf{Current}~$I_{sys}$~[A]
      & \textbf{Duty}~$\gamma_{sys}$
-     & \textbf{Power}~$P_{sys}$~[W]                                        \\
+     & \textbf{Power}~$P_{sys}$~[W]   \\
     \midrule
     MCU
      & $0.15$
      & $1$
-     & $0.5$         \\
+     & $0.5$                          \\
 
     Jetson Orin Nano
      & $1.3$
      & $1$
-     & $15.6$   \\
+     & $15.6$                         \\
 
     Motors
      & $1.5$
      & $0.5$
-     & $16.8$\\
+     & $16.8$                         \\
     Modules
      & $0.6$
      & $1$
-     & $3$ \\
+     & $3$                            \\
     \midrule
     \textbf{Total}
-     & 
-     & 
-     & $35.9$                                                \\
+     &
+     &
+     & $35.9$                         \\
     \bottomrule
   \end{tabular}
   \caption{Components power budget}
@@ -1751,7 +1751,7 @@ The current implementation of the robot is a proof-of-concept that demonstrates 
 
 \begin{itemize}
   \item \textbf{IMU integration}: As seen in the results, the robot's odometry has margin of improvement, this can be achieved by integrating an \gls{imu} sensor to provide additional information about the robot's orientation and acceleration, which can help to improve the accuracy of the odometry.
-  \item \textbf{\gls{ir} sensor integration}: Adding an \gls{ir} sensor helps with aligning the RGB and depth images, improving the system's ability to generate accurate 3D maps, reducing the dependencies on the stereo calculations the showed limitations as seen in the results. 
+  \item \textbf{\gls{ir} sensor integration}: Adding an \gls{ir} sensor helps with aligning the RGB and depth images, improving the system's ability to generate accurate 3D maps, reducing the dependencies on the stereo calculations the showed limitations as seen in the results.
   \item \textbf{Custom PCB}: The current implementation uses modules that are connected via cables, which lack cable management and can be prone to disconnections and accidental short circuit. A custom \gls{pcb} can be designed to integrate all the modules and sensors, providing a more robust and reliable solution.
 \end{itemize}
 \section{Software improvements}
@@ -1770,6 +1770,11 @@ With the acceleration of robotics, labor and social justice issues arise, as rob
 The intention of this project is not to create a robot that replaces human workers, but rather to create a robot that can assist humans in their work, and make it safer. In the last years, the use of robots in hazardous environments has increased, from the 2010 haiti earthquake to the Deepwater Horizon oil spill where it helped in the search and rescue operations~\cite{10.7551/mitpress/9407.003.0012}.\\
 Professional responsibility adds to the idea, every engineer shares legal obligation and moral responsibility to Incorporate professional ethics into their work such as social justice, environmental sustainability, and human rights. The project combines a deontological stance with utilitarian view, establishing duties, while optimizing for measurable benefits such as lower injuries and broader workplace inclusion.\\
 In sum, autonomous robots provide an extraordinary opportunity yo improve the quality of life and work, To ensure that they uplift rather than burden the human condition, a human-centered approach is essential. This includes continuous upskilling and reconversion programs for affected workers and democratized access to technical training. Industry standards such as ISO 13482 and ISO/TS 15066 provide concrete guidance for safe, inclusive design, but must be augmented by social assessments and community engagement.
+The present work can be assessed with the four engineering ethical concepts: beneficence, non-maleficence, autonomy and justice. Beneficence is addressed with what is mentioned previously, helping with the well-being of humans.
+Non-maleficence is satisfied through the implementation of emergency stops, low maximum speed, battery an voltage management, all of which lower the probability accidental hazards.
+Respect for autonomy is preserved by publishing the software stack, users retain the ability to inspect and audit robot behavior.
+Justice is promoted by keeping the bill of materials below 1500 \euro so that smaller institutions can adopt the technology.
+
 
 \chapter{Work plan \& budget}\label{sec:work_plan_budget}
 
@@ -1842,8 +1847,8 @@ In accordance with regulations and guidelines, the budget has been estimated con
     Component selection   & 29                       & 2                           & 535                           \\
     Programming of MCU    & 77                       & 3                           & 1305                          \\
     Programming of ROS~2  & 147                      & 4                           & 2405                          \\
-    Testing               & 15                       & 0                           & 225                          \\
-    Elaboration of memory & 50                       & 3                           & 900                          \\
+    Testing               & 15                       & 0                           & 225                           \\
+    Elaboration of memory & 50                       & 3                           & 900                           \\
     \midrule
     \textbf{Totals}       & 338                      & 15                          & 5820                          \\
     \bottomrule
@@ -1861,23 +1866,23 @@ the costs of the components used in the project are summarized in Table~\ref{tab
       S[table-format=3.0]
       S[table-format=5.0]}
     \toprule
-    \textbf{Component}            & {\textbf{Qty.}} & {\textbf{Cost (\euro)}} \\
+    \textbf{Component} & {\textbf{Qty.}} & {\textbf{Cost (\euro)}} \\
     \midrule
-    Jetson Orin Nano              & 1               & 250                     \\
+    Jetson Orin Nano   & 1               & 250                     \\
     MCU                & 1               & 12                      \\
-    Motor drivers        & 2               & 134                     \\
-    CAN module         & 1               & 3                      \\
-    Li-ion battery      & 1               & 170                     \\
-    DC-DC converter   & 3               & 33                      \\
+    Motor drivers      & 2               & 134                     \\
+    CAN module         & 1               & 3                       \\
+    Li-ion battery     & 1               & 170                     \\
+    DC-DC converter    & 3               & 33                      \\
     BMS                & 1               & 39                      \\
-    Camera & 1               & 149                     \\
-    LiDAR & 1               & 66                     \\
-    Motors    & 4               & 96                     \\
-    Wheels     & 4               & 187                     \\
-    Chassis     &                & 24                     \\
-    Misc. wiring            &                & 12                      \\
+    Camera             & 1               & 149                     \\
+    LiDAR              & 1               & 66                      \\
+    Motors             & 4               & 96                      \\
+    Wheels             & 4               & 187                     \\
+    Chassis            &                 & 24                      \\
+    Misc. wiring       &                 & 12                      \\
     \midrule
-    \textbf{Totals}   &                 & 1175                     \\
+    \textbf{Totals}    &                 & 1175                    \\
     \bottomrule
   \end{tabular}
   \caption{Bill of materials}
