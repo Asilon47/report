@@ -1,0 +1,7 @@
+\contentsline {algorithm}{\numberline {1}{\ignorespaces update\_motor\_position}}{34}{algorithm.127}%
+\contentsline {algorithm}{\numberline {2}{\ignorespaces compute\_speed\_for\_all\_motors}}{35}{algorithm.131}%
+\contentsline {algorithm}{\numberline {3}{\ignorespaces motor\_API}}{35}{algorithm.133}%
+\contentsline {algorithm}{\numberline {4}{\ignorespaces receive\_can\_rx}}{39}{algorithm.152}%
+\contentsline {algorithm}{\numberline {5}{\ignorespaces send\_can\_tx}}{40}{algorithm.155}%
+\contentsline {algorithm}{\numberline {6}{\ignorespaces update\_mecanum\_odometry}}{46}{algorithm.190}%
+\contentsline {algorithm}{\numberline {7}{\ignorespaces update\_mecanum\_controller}}{48}{algorithm.195}%

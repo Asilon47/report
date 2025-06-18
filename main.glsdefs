@@ -1,0 +1,1092 @@
+\glsdefs@newdocentry{bovw}%
+{%
+name={Bag of Visual Words (BoVW)},%
+sort={Bag of Visual Words (BoVW)},%
+type={main},%
+first={Bag of Visual Words (BoVW)},%
+firstplural={Bags of Visual Words (BoVWs)},%
+text={BoVW},%
+plural={Bags of Visual Words (BoVWs)},%
+description={A computer vision model that represents an image as a histogram of local visual features clustered into a visual vocabulary},%
+descriptionplural={A computer vision model that represents an image as a histogram of local visual features clustered into a visual vocabulary},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{masterslave}%
+{%
+name={master and slave},%
+sort={master and slave},%
+type={main},%
+first={master and slave},%
+firstplural={masters and slaves},%
+text={master and slave},%
+plural={masters and slaves},%
+description={A hierarchical communication model where a master device controls the communication and initiates requests, while slave devices respond to those requests},%
+descriptionplural={A hierarchical communication model where a master device controls the communication and initiates requests, while slave devices respond to those requests},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{servo}%
+{%
+name={Servomotor},%
+sort={Servomotor},%
+type={main},%
+first={Servomotor},%
+firstplural={Servomotors},%
+text={Servomotor},%
+plural={Servomotors},%
+description={A rotary actuator that allows control of angular position},%
+descriptionplural={A rotary actuator that allows control of angular position},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pwm}%
+{%
+name={Pulse Width Modulation (PWM)},%
+sort={Pulse Width Modulation (PWM)},%
+type={main},%
+first={Pulse Width Modulation (PWM)},%
+firstplural={Pulse Width Modulation (PWM)s},%
+text={PWM},%
+plural={Pulse Width Modulation (PWM)},%
+description={Is a technique used to control the amount of power delivered to a device by switching it on and off},%
+descriptionplural={Is a technique used to control the amount of power delivered to a device by switching it on and off},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{latency}%
+{%
+name={Latency},%
+sort={Latency},%
+type={main},%
+first={Latency},%
+firstplural={Servomotors},%
+text={Latency},%
+plural={Servomotors},%
+description={Is the delay, measured in milliseconds},%
+descriptionplural={Is the delay, measured in milliseconds},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hbridge}%
+{%
+name={H-bridge},%
+sort={H-bridge},%
+type={main},%
+first={H-bridge},%
+firstplural={H-bridge},%
+text={H-bridge},%
+plural={H-bridge},%
+description={Is an electronic component design that enables switching of the polarity of a voltage applied},%
+descriptionplural={Is an electronic component design that enables switching of the polarity of a voltage applied},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rgbd}%
+{%
+name={RGB-D},%
+sort={RGB-D},%
+type={main},%
+first={RGB-D},%
+firstplural={RGB-D},%
+text={RGB-D},%
+plural={RGB-D},%
+description={Is a camera that captures both color (RGB) and depth information of a scene simultaneously},%
+descriptionplural={Is a camera that captures both color (RGB) and depth information of a scene simultaneously},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hall}%
+{%
+name={Hall encoder},%
+sort={Hall encoder},%
+type={main},%
+first={Hall encoder},%
+firstplural={Hall encoders},%
+text={Hall encoder},%
+plural={Hall encoders},%
+description={Is a sensor that uses Hall effect to measure rotation or position},%
+descriptionplural={Is a sensor that uses Hall effect to measure rotation or position},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fpu}%
+{%
+name={floating point unit (FPU)},%
+sort={floating point unit (FPU)},%
+type={main},%
+first={floating-point unit (FPU)},%
+firstplural={floating-point unit (FPU)s},%
+text={FPU},%
+plural={floating point units (FPU)},%
+description={Is a specialized part of a computer's processor that handles floating-point arithmetic operations},%
+descriptionplural={Is a specialized part of a computer's processor that handles floating-point arithmetic operations},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ros}%
+{%
+name={Robot Operating system (ROS)},%
+sort={Robot Operating system (ROS)},%
+type={main},%
+first={Robot operating system (ROS)},%
+firstplural={Robot operating system (ROS)s},%
+text={ROS},%
+plural={ROSs},%
+description={Is a set of software libraries and tools that help building robot applications},%
+descriptionplural={Is a set of software libraries and tools that help building robot applications},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{linux}%
+{%
+name={Linux},%
+sort={Linux},%
+type={main},%
+first={Linux},%
+firstplural={Linuxs},%
+text={Linux},%
+plural={Linuxs},%
+description={Is an open-source operating system that allows low-level access},%
+descriptionplural={Is an open-source operating system that allows low-level access},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rasp}%
+{%
+name={Raspberry Pi},%
+sort={Raspberry Pi},%
+type={main},%
+first={Raspberry Pi},%
+firstplural={Raspberry Pis},%
+text={Raspberry Pi},%
+plural={Raspberry Pis},%
+description={Is a low-cost, single-board computer that runs Linux},%
+descriptionplural={Is a low-cost, single-board computer that runs Linux},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{arm}%
+{%
+name={ARM architecture (ARM)},%
+sort={ARM architecture (ARM)},%
+type={main},%
+first={ARM architecture (ARM)},%
+firstplural={ARM architecture (ARM)s},%
+text={ARM},%
+plural={ARMs},%
+description={Is a family of reduced instruction set computing architectures for computer processors},%
+descriptionplural={Is a family of reduced instruction set computing architectures for computer processors},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cube}%
+{%
+name={STM32Cube},%
+sort={STM32Cube},%
+type={main},%
+first={STM32Cube},%
+firstplural={STM32Cubes},%
+text={STM32Cube},%
+plural={STM32Cubes},%
+description={Is a complete software solution for STM32 microcontrollers and microprocessors},%
+descriptionplural={Is a complete software solution for STM32 microcontrollers and microprocessors},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{driver}%
+{%
+name={driver},%
+sort={driver},%
+type={main},%
+first={driver},%
+firstplural={drivers},%
+text={driver},%
+plural={drivers},%
+description={In computer technology, a driver is software that allows the operating system to communicate with and control hardware devices},%
+descriptionplural={In computer technology, a driver is software that allows the operating system to communicate with and control hardware devices},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tfidf}%
+{%
+name={TF-IDF},%
+sort={TF-IDF},%
+type={main},%
+first={TF-IDF},%
+firstplural={TF-IDF},%
+text={TF-IDF},%
+plural={TF-IDF},%
+description={Is a numerical statistic that reflects the importance of a word in a document relative to a collection of documents},%
+descriptionplural={Is a numerical statistic that reflects the importance of a word in a document relative to a collection of documents},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{homogeneous}%
+{%
+name={homogeneous coordinates},%
+sort={homogeneous coordinates},%
+type={main},%
+first={homogeneous coordinates},%
+firstplural={homogeneous coordinates},%
+text={homogeneous coordinates},%
+plural={homogeneous coordinates},%
+description={Is a system of coordinates similar to the cartesian, the conversion is done by adding a dependent term of the original dimensions, it gives some advantages over the cartesian coordinates in image analysis},%
+descriptionplural={Is a system of coordinates similar to the cartesian, the conversion is done by adding a dependent term of the original dimensions, it gives some advantages over the cartesian coordinates in image analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{costmap}%
+{%
+name={Costmap},%
+sort={Costmap},%
+type={main},%
+first={Costmap},%
+firstplural={Costmaps},%
+text={Costmap},%
+plural={Costmaps},%
+description={Is a representation of the cost (difficulty) of traversing different areas of the map},%
+descriptionplural={Is a representation of the cost (difficulty) of traversing different areas of the map},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tf}%
+{%
+name={Transformation},%
+sort={Transformation},%
+type={main},%
+first={Transformation},%
+firstplural={Transformations},%
+text={Transformation},%
+plural={Transformations},%
+description={Is a way to establish multiple coordinates frames between components, wither static or dynamic},%
+descriptionplural={Is a way to establish multiple coordinates frames between components, wither static or dynamic},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ekf}%
+{%
+name={Extended Kalman filter (EKF)},%
+sort={Extended Kalman filter (EKF)},%
+type={main},%
+first={Extended Kalman filter (EKF)},%
+firstplural={Extended Kalman filters (EKF)},%
+text={Extended Kalman filter (EKF)},%
+plural={Extended Kalman filters (EKF)},%
+description={{Is an algorithm that estimates the state of a dynamic system from noisy measurements} text},%
+descriptionplural={{Is an algorithm that estimates the state of a dynamic system from noisy measurements} text},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{slam}%
+{%
+name={\acronymfont {\glsentryshort {slam}}},%
+sort={SLAM},%
+type={acronym},%
+first={SLAM},%
+firstplural={SLAMs},%
+text={SLAM},%
+plural={SLAMs},%
+description={Simultaneous Localization and Mapping},%
+descriptionplural={Simultaneous Localization and Mapping},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Simultaneous Localization and Mapping},%
+longplural={Simultaneous Localization and Mappings},%
+short={SLAM},%
+shortplural={SLAMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rtab}%
+{%
+name={\acronymfont {\glsentryshort {rtab}}},%
+sort={RTAB-Map},%
+type={acronym},%
+first={RTAB-Map},%
+firstplural={RTAB-Maps},%
+text={RTAB-Map},%
+plural={RTAB-Maps},%
+description={Real Time Appearance Based Mapping},%
+descriptionplural={Real Time Appearance Based Mapping},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Real Time Appearance Based Mapping},%
+longplural={Real Time Appearance Based Mappings},%
+short={RTAB-Map},%
+shortplural={RTAB-Maps},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lidar}%
+{%
+name={\acronymfont {\glsentryshort {lidar}}},%
+sort={LiDAR},%
+type={acronym},%
+first={LiDAR},%
+firstplural={LiDARs},%
+text={LiDAR},%
+plural={LiDARs},%
+description={Light Detection and Ranging},%
+descriptionplural={Light Detection and Ranging},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Light Detection and Ranging},%
+longplural={Light Detection and Rangings},%
+short={LiDAR},%
+shortplural={LiDARs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{can}%
+{%
+name={\acronymfont {\glsentryshort {can}}},%
+sort={CAN},%
+type={acronym},%
+first={CAN},%
+firstplural={CANs},%
+text={CAN},%
+plural={CANs},%
+description={Controller Area Network},%
+descriptionplural={Controller Area Network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Controller Area Network},%
+longplural={Controller Area Networks},%
+short={CAN},%
+shortplural={CANs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mcu}%
+{%
+name={\acronymfont {\glsentryshort {mcu}}},%
+sort={MCU},%
+type={acronym},%
+first={MCU},%
+firstplural={MCUs},%
+text={MCU},%
+plural={MCUs},%
+description={Microcontroller Unit},%
+descriptionplural={Microcontroller Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Microcontroller Unit},%
+longplural={Microcontroller Units},%
+short={MCU},%
+shortplural={MCUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bms}%
+{%
+name={\acronymfont {\glsentryshort {bms}}},%
+sort={BMS},%
+type={acronym},%
+first={BMS},%
+firstplural={BMSs},%
+text={BMS},%
+plural={BMSs},%
+description={Battery Management System},%
+descriptionplural={Battery Management System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Battery Management System},%
+longplural={Battery Management Systems},%
+short={BMS},%
+shortplural={BMSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gpio}%
+{%
+name={\acronymfont {\glsentryshort {gpio}}},%
+sort={GPIO},%
+type={acronym},%
+first={GPIO},%
+firstplural={GPIOs},%
+text={GPIO},%
+plural={GPIOs},%
+description={General Purpose Input Output},%
+descriptionplural={General Purpose Input Output},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={General Purpose Input Output},%
+longplural={General Purpose Input Outputs},%
+short={GPIO},%
+shortplural={GPIOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pid}%
+{%
+name={\acronymfont {\glsentryshort {pid}}},%
+sort={PID Controller},%
+type={acronym},%
+first={PID Controller},%
+firstplural={PID Controllers},%
+text={PID Controller},%
+plural={PID Controllers},%
+description={Proportional-Integral-Derivative Controller},%
+descriptionplural={Proportional-Integral-Derivative Controller},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Proportional-Integral-Derivative Controller},%
+longplural={Proportional-Integral-Derivative Controllers},%
+short={PID Controller},%
+shortplural={PID Controllers},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cpu}%
+{%
+name={\acronymfont {\glsentryshort {cpu}}},%
+sort={CPU},%
+type={acronym},%
+first={CPU},%
+firstplural={CPUs},%
+text={CPU},%
+plural={CPUs},%
+description={Central Processing Unit},%
+descriptionplural={Central Processing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Central Processing Unit},%
+longplural={Central Processing Units},%
+short={CPU},%
+shortplural={CPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gpu}%
+{%
+name={\acronymfont {\glsentryshort {gpu}}},%
+sort={GPU},%
+type={acronym},%
+first={GPU},%
+firstplural={GPUs},%
+text={GPU},%
+plural={GPUs},%
+description={Graphics Processing Unit},%
+descriptionplural={Graphics Processing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graphics Processing Unit},%
+longplural={Graphics Processing Units},%
+short={GPU},%
+shortplural={GPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{npu}%
+{%
+name={\acronymfont {\glsentryshort {npu}}},%
+sort={NPU},%
+type={acronym},%
+first={NPU},%
+firstplural={NPUs},%
+text={NPU},%
+plural={NPUs},%
+description={Neural Processing Unit},%
+descriptionplural={Neural Processing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Neural Processing Unit},%
+longplural={Neural Processing Units},%
+short={NPU},%
+shortplural={NPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ltm}%
+{%
+name={\acronymfont {\glsentryshort {ltm}}},%
+sort={LTM},%
+type={acronym},%
+first={LTM},%
+firstplural={LTMs},%
+text={LTM},%
+plural={LTMs},%
+description={Long Term Memory},%
+descriptionplural={Long Term Memory},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Long Term Memory},%
+longplural={Long Term Memorys},%
+short={LTM},%
+shortplural={LTMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wm}%
+{%
+name={\acronymfont {\glsentryshort {wm}}},%
+sort={WM},%
+type={acronym},%
+first={WM},%
+firstplural={WMs},%
+text={WM},%
+plural={WMs},%
+description={Working Memory},%
+descriptionplural={Working Memory},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Working Memory},%
+longplural={Working Memorys},%
+short={WM},%
+shortplural={WMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lts}%
+{%
+name={\acronymfont {\glsentryshort {lts}}},%
+sort={LTS},%
+type={acronym},%
+first={LTS},%
+firstplural={LTSs},%
+text={LTS},%
+plural={LTSs},%
+description={Long Term Support},%
+descriptionplural={Long Term Support},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Long Term Support},%
+longplural={Long Term Supports},%
+short={LTS},%
+shortplural={LTSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cad}%
+{%
+name={\acronymfont {\glsentryshort {cad}}},%
+sort={CAD},%
+type={acronym},%
+first={CAD},%
+firstplural={CADs},%
+text={CAD},%
+plural={CADs},%
+description={Computer Aided Design},%
+descriptionplural={Computer Aided Design},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Computer Aided Design},%
+longplural={Computer Aided Designs},%
+short={CAD},%
+shortplural={CADs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pcb}%
+{%
+name={\acronymfont {\glsentryshort {pcb}}},%
+sort={PCB},%
+type={acronym},%
+first={PCB},%
+firstplural={PCBs},%
+text={PCB},%
+plural={PCBs},%
+description={Printable Circuit Board},%
+descriptionplural={Printable Circuit Board},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Printable Circuit Board},%
+longplural={Printable Circuit Boards},%
+short={PCB},%
+shortplural={PCBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{asic}%
+{%
+name={\acronymfont {\glsentryshort {asic}}},%
+sort={ASIC},%
+type={acronym},%
+first={ASIC},%
+firstplural={ASICs},%
+text={ASIC},%
+plural={ASICs},%
+description={Application Specific Integrated Circuit},%
+descriptionplural={Application Specific Integrated Circuit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Specific Integrated Circuit},%
+longplural={Application Specific Integrated Circuits},%
+short={ASIC},%
+shortplural={ASICs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{imu}%
+{%
+name={\acronymfont {\glsentryshort {imu}}},%
+sort={IMU},%
+type={acronym},%
+first={IMU},%
+firstplural={IMUs},%
+text={IMU},%
+plural={IMUs},%
+description={Inertial Measurement Unit},%
+descriptionplural={Inertial Measurement Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inertial Measurement Unit},%
+longplural={Inertial Measurement Units},%
+short={IMU},%
+shortplural={IMUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ir}%
+{%
+name={\acronymfont {\glsentryshort {ir}}},%
+sort={IR},%
+type={acronym},%
+first={IR},%
+firstplural={IRs},%
+text={IR},%
+plural={IRs},%
+description={Infrared},%
+descriptionplural={Infrared},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Infrared},%
+longplural={Infrareds},%
+short={IR},%
+shortplural={IRs},%
+counter={page},%
+parent={},%
+%
+}%
+

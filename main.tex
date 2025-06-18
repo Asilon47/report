@@ -1,0 +1,72 @@
+% Plantilla de documento para PFG usando memoriaPFC.cls
+
+\documentclass{memoriaPFC}
+
+%% ---------------------------------------------------
+%% Datos del resumen y descriptores (para metadatos y resumen)
+%% ---------------------------------------------------
+
+\makeglossaries
+
+%% ---------------------------------------------------
+%% Comienzo del documento
+%% ---------------------------------------------------
+
+\begin{document}
+\input{glossary}
+%% Selección de idioma del documento
+\selectlanguage{english}
+
+%% ----------------------
+%% Materia preliminar
+%% ----------------------
+
+
+
+\frontmatter
+
+\includepdf[pages=1]{PDF/cover.PDF}
+\includepdf[pages=1]{PDF/cover.PDF}
+
+\resumenPersonalizado{
+  This report presents the design, implementation, and experimental validation of an indoor holonomic mobile robot that integrates Mecanum wheel kinematics with a real time visual \gls{slam} framework under \gls{ros}~2. A custom embedded layer provides precise motor control over \gls{can}, while a computer performs graph based \gls{slam} and navigation path planning. Empirical trials in two representative indoor environments confirm localization accuracy and reliable autonomous navigation. All hardware and software artifacts are available online, offering a reference for future work.
+}{Holonomic robot, visual SLAM, ROS 2; autonomous navigation}
+
+%% Índices
+\tableofcontents
+\listoffigures        
+\listoftables       
+\listof{algorithm}{\listalgorithmname}
+
+%% ----------------------
+%% Contenido principal
+%% ----------------------
+
+\mainmatter
+
+
+\input{Chapters}
+
+%% ----------------------
+%% Bibliografía y apéndices
+%% ----------------------
+
+
+\backmatter
+
+\bibliografia{referencias}
+
+
+
+\chapter*{Acknowledgment}\addcontentsline{toc}{chapter}{Acknowledgment}
+
+Deepest gratitude is extended to PhD. Javier Vicente Sáez, project director, for invaluable guidance and unwavering support throughout this work. Generous provision of all required materials facilitated experimental work, and unrestricted access to Laboratory L009 ensured successful completion of the project.
+
+\printglossary[type=main, title=Glossary]\addcontentsline{toc}{chapter}{Glossary}
+\printglossary[type=acronym, title=Acronyms]\addcontentsline{toc}{chapter}{Acronyms}
+
+\appendix
+
+\input{apendex}
+
+\end{document}

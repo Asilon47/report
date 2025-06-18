@@ -1,0 +1,74 @@
+{
+    "files.exclude": {
+        // LaTeX temporary files
+        "**/*.aux": true,
+        "**/*.log": true,
+        "**/*.toc": true,
+        "**/*.out": true,
+        "**/*.synctex.gz": true,
+        "**/*.fls": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.lof": true,
+        "**/*.lot": true,
+        "**/*.acn": true,
+        "**/*.acr": true,
+        "**/*.glo": true,
+        "**/*.gls": true,
+        "**/*.glsdefs": true,
+        "**/*.ist": true,
+        "**/*.doa": true,
+        "**/*.ilg": true,
+        "**/*.loa": true,
+        "**/*.latexmkrc": true,
+
+        
+        // Folders you might want to hide
+        "**/.vscode": true,  // Set to true to hide .vscode folder
+        
+        // Common system files
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "cSpell.words": [
+        "accum",
+        "ASICs",
+        "bringup",
+        "CANH",
+        "CANL",
+        "Celeron",
+        "colcon",
+        "costmap",
+        "DCMAKE",
+        "eabi",
+        "ESIDE",
+        "fric",
+        "graphcloud",
+        "hese",
+        "holonomic",
+        "Jetson",
+        "kbit",
+        "Kinect",
+        "lsusb",
+        "Markovian",
+        "mecanum",
+        "mechatronic",
+        "Microcontroller",
+        "openocd",
+        "perframe",
+        "plub",
+        "pointcloud",
+        "RGBD",
+        "rosbridge",
+        "rosdep",
+        "RTAB",
+        "rtabmap",
+        "setpoint",
+        "setpoints",
+        "stlink",
+        "subcomponents",
+        "WROOM",
+        "Xtensa"
+    ]
+}
